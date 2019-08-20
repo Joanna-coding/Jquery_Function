@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment: jQuery Functions</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" i
+        ntegrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head> 
+<style>
+    *{
+        text-align: center;
+    }
+    hr{
+        width: 1000px;
+    }
+
+    h5{
+        color: coral;
+        margin-left: 10px;
+    }
+
+    .wrapper div{
+        width: 800px;
+        height: 30px;
+        display: inline-flex;
+        width: 600px;
+    }
+
+    button{
+        width: 100px;
+    }
+
+    .intro{
+        color: green;
+        font-style: italic;
+    }
+
+</style>
+<script>
+        $(document).ready(function(){
+            $('#click').click(function(){
+               alert("this is a alert ");
+            });
+            $('#hide').click(function(){
+                $('#color').hide();
+            });
+            $('#show').click(function(){
+                $('#color').show();
+            });
+            $('#toggle').click(function(){
+                $('hr').toggle();
+            });
+            $('#slideDown').click(function(){
+                $('#color').slideDown();
+            });
+            $('#slideUp').click(function(){
+                $('#color').slideUp();
+            });
+            $('#fadeIn').click(function(){
+                $('.row6').fadeIn();
+            });
+            $('#fadeOut').click(function(){
+                $('.row6').fadeOut();
+            });
+            $('#addClass').click(function(){
+                $('h1').addClass('intro');
+            });
+
+            $('#before').click(function(){
+                $('h1').before('<p>Hello World!</p>');
+            });
+
+            $('#after').click(function(){
+                $('h1').after('<p>Hello World!</p>');
+            });
+
+            $('#append').click(function(){
+                $('div').append('<p>this is a appending text!</p>');
+            });
+
+            $('#html').click(function(){
+                $('div').append('<p>hello HTML!</p>');
+            });
+            $('#attr').click(function(){
+                $('h5').attr("margin-left", "200");
+            });
+
+            $("button").click(function(){
+                $("input:text").val("joanna");
+            });
+
+            $("#text").click(function(){
+                $("h5").text('<p>A new text is added!</p>');
+            });
+            
+        });
+    </script>
+
+<body>
+    <div class="wrapper">
+        
+        <h1 >Assignment: jQuery Functions</h1>
+        <h5 id="color">learn more about how you can use these jQuery methods to build some amazing things</h5>
+            
+        <hr>
+        <div class="row1">
+            <h1 id="click">Click me!</h1>
+            
+        </div><hr>
+        <div class="row2">
+                <h1 id="hide">Hide! </h1>
+                
+        </div><hr>
+        <div class="row3">
+                <h1 id="show">Show! </h1>
+        </div><hr>
+        <div class="row4">
+                <h1 id="toggle">Toggle! </h1>
+        </div><hr>
+        <div class="row5">
+                <h1 id="slideDown">SlideDown! </h1>
+        </div><hr>
+        <div class="row6">
+                <h1 id="slideUp">SlideUp! </h1>
+        </div><hr>
+        <div class="row7">
+                <h1 id="fadeIn">FadeIn! </h1>
+        </div><hr>
+        <div class="row8">
+                <h1 id="fadeOut">FadeOut! </h1>
+        </div><hr>
+        <div class="row9">
+                <h1 id="addClass">AddClass! </h1>
+        </div><hr>
+        <div class="row10">
+                <h1 id="before">Before! </h1>
+        </div><hr>
+        <div class="row10">
+                <h1 id="after">After! </h1>
+        </div><hr>
+        <div class="row10">
+                <h1 id="append">Append! </h1>
+        </div><hr>
+        <div class="row10">
+                <h1 id="html">Html! </h1>
+        </div><hr>
+        <div class="row10">
+                <h1 id="attr">Attr! </h1>
+        </div><hr>
+        <div class="row10">
+                <p>Name: <input type="text" name="user"></p>
+                <button>click</button>
+        </div><hr>
+        <div class="row10">
+                <h1 id="text">Text! </h1>
+        </div><hr>
+    
+    </div>
+</body>
+
+</html>
